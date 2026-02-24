@@ -1,0 +1,908 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; 
+}
+body{
+    background: #012c1f;
+    background-image: url("/Slicing/pattern-bg.png") ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    display: flex;
+    align-items: center;
+    background: white;
+}
+.top p{
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+}
+.top a{
+    color: green;
+    text-decoration: none;
+}
+.top img{
+  background: green;
+    height: 20px;
+    width: 20px;
+    border-radius: 12px;
+    padding: 4px;
+    margin-right: 15px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px; 
+}
+.addidas-icon{
+    margin: 13px;
+    width: 150px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.btn{
+    display: flex; 
+    gap: 10px;
+    margin-right: 80px;
+        transform: skew(-16deg);
+
+
+    
+}
+.btn1,.btn2{
+  padding: 26px 41px;
+    color: white;
+    background: green;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
+
+}
+
+.btn2{
+    background: #012c1f;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: #286536;
+   height: 50px;
+   padding: 0 20px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+
+#nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+#nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+.menu-icon {
+    display: none;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+.search {
+    width: 100%;
+    background: #000;
+    color: white;
+    border: none;
+    padding: 10px 35px 10px 10px; 
+    position: relative;
+}
+
+.search-container img {
+    position: absolute;
+    top: 50%;
+    right: 23px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+.home-page{
+    display: flex;
+    justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+}
+.home-area{
+    font-weight: bold;
+    color: white;
+   
+    background: #286536;
+    width: 60%;
+padding: 20px;
+
+}
+.home-area h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.home-page p{
+    background: white;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    padding: 17px;
+    font-weight: bold;
+}
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background: url('./Slicing/hero-bg.png') no-repeat center center/cover;
+  overflow: hidden;
+}
+
+.slide-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.slide-indicator .bar {
+  width: 40px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+
+.slide-indicator .bar.active {
+  background-color: #ffffff;
+}
+
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 44, 31, 0.6);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 60px;
+  color: white;
+}
+
+.left {
+  max-width: 50%;
+}
+
+.left h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.left p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.right img {
+  width: 280px;
+  height: auto;
+  margin-right: 70px;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+}
+
+.play-icon img {
+  width: 65px;
+  height: 65px;
+  border-radius: 35px;
+  background-color: #012c1f;
+  opacity: 90%;
+  cursor: pointer;
+  padding: 15px 15px;
+}
+
+.video-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.video-bg-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index:10;
+}
+.video-bg-controls .arrow-icon {
+  position: absolute;
+  width: 20px;
+  height: auto;
+  cursor: pointer;
+}
+.video-bg-controls .left-arrow {
+  left: 20px;
+}
+
+.video-bg-controls .right-arrow {
+  right: 20px;
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.video-content {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.video-content iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.close-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background: white;
+  color: black;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 4px 10px;
+  font-weight: bold;
+}
+
+.min-slide{
+    background: url('/Slicing/pattern-bg.png');
+    padding: 40px 0px 20px;
+    text-align: center;
+}
+.slider-container{
+    position: relative;
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    overflow: hidden;
+    width: 500px;
+}
+.images{
+    display: flex;
+    
+    transition: transform 0.5s ease;
+}
+.image-1{
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.image-1 img{
+    border: 8px solid #286536;
+    
+    height: 120px;
+    object-fit: contain;
+}
+.arrow{
+    width: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.left{ left: -35px;}
+.right{ right: -35px;}
+
+.dashes{
+    margin-top: 15px;
+}
+
+.dash{
+    display: inline-block;
+    width: 18px;
+    height: 3px;
+    background: green;
+    margin:0 4px ;
+    border-radius: 2px;
+}
+.dash.active{
+    background: white;
+}   
+
+.divider{
+    width: 80%;
+    height: 1px;
+    background: #286536;
+    margin:20px auto 0;
+}
+
+.events-box {
+    width: 260px;
+    background: linear-gradient(#2f8f4e, #1f6f3c);
+    padding: 15px;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-left: 1000px;
+}
+
+.events-box h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.event:last-child {
+    border-bottom: none;
+}
+
+.number {
+    background: white;
+    color: #2f8f4e;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-text h4 {
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.event-text span {
+    font-size: 11px;
+    opacity: 0.8;
+}
+.right-cards{
+    width: 300px;
+    height: auto;
+    
+
+}
+.right-cards img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.right-cards h3{
+    padding: 10px;
+    background: #286536;
+    color: white;
+}
+.right-cards p{
+    padding: 10px;
+    background: #286536;
+    color: white;
+}
+.right-cards .card-btn{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #012c1f;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+.all-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}   
+.last-card{
+   display:flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+    padding: 12px;
+    
+
+}
+.last-card-1{
+    height: auto;
+    display: flex;
+}
+.last-card-2{
+    height: auto;
+    display: flex;
+}
+.last-card h3{
+    padding: 10px;
+    background: #286536;
+    color: white;
+    display: flex;
+}
+
+.last-card-1-content{
+  
+    flex-direction: column;
+    color: white;
+    background: #286536;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+        clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+.last-card-2-content{
+  
+     flex-direction: column;
+    color: white;
+    background: #286536;
+   
+    text-align: center;
+    display: flex;
+          clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+}
+.last-card img{
+
+    width: 500px;
+    object-fit: cover;
+    height:300px;
+}
+.last-card-1 img{
+      clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+
+}
+.last-card-2 img{
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.input{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.row{
+    display: flex;
+    gap:20px;
+    width: 50%;
+}
+.data{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+.data label{
+    margin-bottom: 10px;
+}
+.data input, .data select, .data textarea{
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+}
+textarea{
+    resize: vertical;
+    min-height: 100px;
+}
+.contact-us{
+    background: #08512d;
+    background-image: url('/Slicing/pattern-bg.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    margin-top: 40px;
+    height: 600px;
+}
+.contact-us P{
+    text-align: center;
+    color: white;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.msg{
+    width: 30%;
+}
+
+.gender-part{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: 600;
+}
+.gender{
+    display: flex;
+    gap: 30px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+.gender input[type="radio"]{
+    accent-color: green;
+    transform: scale(1.5);
+}
+.gender label{
+    color: white;
+}
+.data label{
+    color: white;
+}
+#message{
+    border-radius: 0;
+}
+.data input{
+    border-radius: 0;
+}
+.submit-row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#state{
+    border-radius: 0;
+}
+
+.submit-btn{
+    background: #012c1f;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.footer{
+    width: 100%;
+    background: #012c1f;
+    background-image: url('/Slicing/pattern-bg.png');
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 12px;
+
+}
+.footer .footer-content{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer p a{
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer .footer-content p{
+    position: relative;
+}
+.footer .footer-content p:not(:last-child)::after{
+    content: "/";
+
+margin: 0 8px;
+    color: white;
+  
+}
+
+.footer .footer-icons{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer .footer-icons img{
+    width: 20px;
+    height: 20px;
+}
+
+.copyright{
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    margin-top: 12px;
+    font-weight: 100;
+    
+}
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .addidas-icon {
+        margin: 10px 0;
+    }
+    .btn {
+        margin-right: 0;
+        transform: none;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .search-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .home-page {
+        flex-direction: column;
+        text-align: center;
+    }
+    .home-area, .home-page p {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .right img {
+        margin: 20px 0 0;
+    }
+    .slider-container {
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+    .events-box {
+        margin: 20px auto;
+    }
+    .right-cards {
+        width: 100%;
+    }
+    .all-cards {
+        flex-direction: column;
+    }
+    .last-card img {
+        width: 100%;
+        height: auto;
+    }
+    .last-card-1 img, .last-card-2 img {
+        clip-path: none;
+    }
+    .input .row {
+        flex-direction: column;
+    
+    }
+    .footer .footer-content {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer .footer-content p::after {
+        content: "";
+    }
+  #message{
+    min-height: 80px;
+
+  }
+  .menu-icon {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1f4e2a;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        animation: slideDown 0.3s ease;
+    }
+
+    #nav-links li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    #nav-links li a {
+        font-size: 16px;
+        display: block;
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    .search-container {
+        display: none;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.video-hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+
+  .left {
+    max-width: 100%;
+  }
+
+  .left h1 {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+
+  .right img {
+    width: 90%;
+    max-width: 260px;
+    margin: auto;
+  }
+
+  .play-icon img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+  }
+
+  .video-bg-controls .left-arrow {
+    left: 10px;
+  }
+
+  .video-bg-controls .right-arrow {
+    right: 10px;
+  }
+
+  .video-bg-controls .arrow-icon {
+    width: 16px;
+  }
+
+  .slide-indicator .bar {
+    width: 25px;
+    height: 3px;
+  }
+
+  .video-content {
+    width: 90%;
+    height: 220px;
+  }
+
+
+
+.contact-us{
+    height: auto;
+    padding: 40px 15px;
+}
+.contact-us P{
+    font-size: 18px;
+}
+.msg{
+    width: 80%;
+}
+.row{
+    width: 100%;    
+
+
+}
+.data input, .data select, .data textarea{
+    font-size: 14px;
+    padding: 8px;
+}
+
+
+
+
+    
