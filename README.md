@@ -7,19 +7,15 @@ A modern and responsive front-end website inspired by Adidas, built using HTML, 
 ## 🚀 Live Demo
 🔗 **View Live Project:** https://abdullahweb79.github.io/Adidas-Front-End/
 
-> ⚠️ Note: If the site shows a security warning, please ensure it is deployed on a trusted platform like Vercel or Netlify.
+<img width="1919" height="888" alt="Screenshot 2025-08-20 215229" src="https://github.com/user-attachments/assets/841579ad-f94d-44c9-ab81-0d21837bba05" />
 
----
 
-## 📸 Screenshots
 
-### 🏠 Home Page
-(Add screenshot here)
+<img width="1902" height="900" alt="Screenshot 2025-08-20 214322" src="https://github.com/user-attachments/assets/acce66d1-93f5-4066-a1d9-40c77d3b219e" />
 
-### 🛍️ Product Section
-(Add screenshot here)
+<img width="1918" height="891" alt="Screenshot 2025-08-20 214402" src="https://github.com/user-attachments/assets/47997fc6-7ae1-44f8-a0c8-9a491b7ff022" />
+<img width="1509" height="3927" alt="speakeasy-silk vercel app_report_686035f517d69ea133dd4afe" src="https://github.com/user-attachments/assets/fbd13ac8-2886-4296-b128-687c19482cd4" />
 
----
 
 ## ✨ Features
 
@@ -41,4 +37,4 @@ A modern and responsive front-end website inspired by Adidas, built using HTML, 
 
 ---
 
-## 📂 Project Structure
+
