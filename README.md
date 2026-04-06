@@ -17,6 +17,7 @@ A modern and responsive front-end website inspired by Adidas, built using HTML, 
 <img width="1509" height="3927" alt="speakeasy-silk vercel app_report_686035f517d69ea133dd4afe" src="https://github.com/user-attachments/assets/fbd13ac8-2886-4296-b128-687c19482cd4" />
 
 
+
 ## ✨ Features
 
 - 🎨 Clean and modern UI design  
