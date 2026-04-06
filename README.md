@@ -6,15 +6,11 @@ A modern and responsive front-end website inspired by Adidas, built using HTML, 
 
 ## 🚀 Live Demo
 🔗 **View Live Project:** https://abdullahweb79.github.io/Adidas-Front-End/
+<img width="1440" height="2825" alt="Test-desktop-view" src="https://github.com/user-attachments/assets/1b6a1967-607f-4bde-a479-892012e965e5" />
+<img width="330" height="684" alt="Screenshot 2026-02-23 125235" src="https://github.com/user-attachments/assets/694b3d2e-220f-4c08-a3c8-3de401693e69" />
+<img width="1885" height="889" alt="Screenshot 2026-02-24 221128" src="https://github.com/user-attachments/assets/be7ede99-e888-49f0-a48d-bc8768dc9fa8" />
+<img width="1888" height="909" alt="Screenshot 2026-02-26 111858" src="https://github.com/user-attachments/assets/21c247fe-9821-4f0d-a7b1-8cd686df11e2" />
 
-<img width="1919" height="888" alt="Screenshot 2025-08-20 215229" src="https://github.com/user-attachments/assets/841579ad-f94d-44c9-ab81-0d21837bba05" />
-
-
-
-<img width="1902" height="900" alt="Screenshot 2025-08-20 214322" src="https://github.com/user-attachments/assets/acce66d1-93f5-4066-a1d9-40c77d3b219e" />
-
-<img width="1918" height="891" alt="Screenshot 2025-08-20 214402" src="https://github.com/user-attachments/assets/47997fc6-7ae1-44f8-a0c8-9a491b7ff022" />
-<img width="1509" height="3927" alt="speakeasy-silk vercel app_report_686035f517d69ea133dd4afe" src="https://github.com/user-attachments/assets/fbd13ac8-2886-4296-b128-687c19482cd4" />
 
 
 
